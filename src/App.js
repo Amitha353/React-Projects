@@ -1,24 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p><Link to="/highChart">HighChart Demo</Link></p>
+      <p><Link to="/stockChart">HighStock Demo</Link></p>
+      <p><Link to="/mapChart">MapChart Demo</Link></p>
+      <p><Link to="/ganttChart">GanttChart Demo</Link></p>
+      <p><Link to="/lineChart">LineChart Demo</Link></p>
+      <p><Link to="/myStockChart">MyStock Chart Demo</Link></p>
     </div>
   );
 }
